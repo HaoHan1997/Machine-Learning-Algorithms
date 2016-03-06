@@ -13,8 +13,8 @@
 
 from numpy import *
 
-def loadDataSet(fileName):      #general function to parse tab -delimited floats
-    numFeat = len(open(fileName).readline().split('\t')) - 1 #get number of fields
+def loadDataSet(fileName):
+    numFeat = len(open(fileName).readline().split('\t')) - 1 #get number of features
     dataMat = []; labelMat = []
     fr = open(fileName)
     for line in fr.readlines():
@@ -40,4 +40,5 @@ if __name__ == '__main__':
     xArry, yArry = loadDataSet(fileName)
     ws = standRegres(xArry, yArry)
 
+    #print linear regression weights
     print ws
