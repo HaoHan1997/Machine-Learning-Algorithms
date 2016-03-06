@@ -1,3 +1,16 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+'''
+@author yangmu
+@version 0.1
+@date 2016-03-06
+'''
+
+# This file is the implementation of linear regression.
+# The experimental data is ex0.txt in the same directory.
+
+
 from numpy import *
 
 def loadDataSet(fileName):      #general function to parse tab -delimited floats
@@ -21,3 +34,10 @@ def standRegres(xArr,yArr):
         return
     ws = xTx.I * (xMat.T*yMat)
     return ws
+
+if __name__ == '__main__':
+    fileName = './ex0.txt'
+    xArry, yArry = loadDataSet(fileName)
+    ws = standRegres(xArry, yArry)
+
+    print ws
