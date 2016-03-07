@@ -7,7 +7,7 @@
 '''
 
 # This file is the implementation of linear regression.
-# The experimental data is ex0.txt in the same directory.
+# The experimental data is testSet in the same directory.
 
 
 from numpy import *
@@ -35,7 +35,7 @@ def standRegres(xArr,yArr):
     return ws
 
 if __name__ == '__main__':
-    fileName = './ex0.txt'
+    fileName = './testSet'
     xArry, yArry = loadDataSet(fileName)
     ws = standRegres(xArry, yArry)
 
