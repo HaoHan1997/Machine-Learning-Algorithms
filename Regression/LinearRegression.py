@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 '''
-@author yangmu
 @version 0.1
 @date 2016-03-06
 '''
@@ -40,5 +39,5 @@ if __name__ == '__main__':
     xArry, yArry = loadDataSet(fileName)
     ws = standRegres(xArry, yArry)
 
-    #print linear regression weights
+    print 'The weight value is:'
     print ws
