@@ -1,3 +1,11 @@
+#!/usr/bin/python
+
+'''
+@version 0.1
+@date 2016-03-08
+'''
+
+
 from numpy import *
 import matplotlib.pyplot as plt
 
