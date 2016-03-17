@@ -1,3 +1,12 @@
+'''
+@version 0.1
+@date 2016-03-17
+'''
+
+'''
+This knn algorithm is implemented without kd-tree
+'''
+
 from numpy import *
 import operator
 
