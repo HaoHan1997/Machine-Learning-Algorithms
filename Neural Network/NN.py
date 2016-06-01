@@ -27,7 +27,7 @@ def visualize(X, y, model):
     # plt.scatter(X[:, 0], X[:, 1], s=40, c=y, cmap=plt.cm.Spectral)
     # plt.show()
     plot_decision_boundary(lambda x:predict(model,x), X, y)
-    plt.title("Logistic Regression")
+    plt.title("NN")
 
 
 def plot_decision_boundary(pred_func, X, y):
